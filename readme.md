@@ -12,10 +12,10 @@ Build the Typescript code first
 npm run build-ts
 ```
 
-To run Node server
+Start node server
 ```
 npm start
 ```
 
 ### Authors
-* **Akhil Ramani** - *Full Stack developer* - [PurpleBooth](https://www.linkedin.com/in/akhilramani)
+* **Akhil Ramani** - *Full Stack developer* - [Linkedin](https://www.linkedin.com/in/akhilramani)
