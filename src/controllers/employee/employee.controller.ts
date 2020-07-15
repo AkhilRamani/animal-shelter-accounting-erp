@@ -2,6 +2,7 @@ import {Request, Response} from 'express'
 import {join} from 'path'
 import {EmployeeRepository} from '../../repository'
 import { DocsNotProvidedError } from '../../common/exceptions.common'
+import { message } from 'antd'
 import { EmployeeModel } from '../../schema'
 
 const saveEmployee = async (req: Request, res: Response) => {
@@ -21,9 +22,8 @@ const saveEmployee = async (req: Request, res: Response) => {
 const getEmpDoc = async (req: Request, res: Response) => {
     try{
         const employeeId = req.params.id
-        res.download(join(__dirname, `../../../../employee-docs/${employeeId}.png`), (err) => {
-            if(err) res.status(404).send({message: "docs not found"})
-        })
+        const EmployeeRepo = new EmployeeRepository()
+        EmployeeRepo.startDownEmpDoc(employeeId, res)
     }
     catch(e){
         res.status(400).send({message: e.message})

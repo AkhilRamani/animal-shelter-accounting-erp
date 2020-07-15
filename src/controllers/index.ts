@@ -5,7 +5,7 @@ import {saveEmployee, getEmpDoc, deleteEmployee, editEmployee} from './employee/
 import {addNote, updateNote, deleteNote} from './note/note.controller'
 import {addTrustMember, deleteTrustMember, updateTrustMember} from './trustMember/trustMember.controller'
 
-import {generateFilteredReport, getIncomeExpenseAnalytics, smsController} from './common/common.controller'
+import {generateFilteredReport, getIncomeExpenseAnalytics, smsController, getMoneyReport} from './common/common.controller'
 import {saveAnimalIncome, deleteAnimalIncome, editAnimalIncome} from './animalIncome/animalIncome.controller'
 import {saveDeadAnimal, deleteDeadAnimal, editDeadAnimal} from './deadAnimal/deadAnimal.controller'
 import {saveGivenAnimal, deleteGivenAnimal, editGivenAnimal} from './givenAnimal/givenAnimal.controller'
@@ -38,6 +38,7 @@ export {
     generateFilteredReport,
     getIncomeExpenseAnalytics,
     smsController,
+    getMoneyReport,
     saveAnimalIncome,
     deleteAnimalIncome,
     editAnimalIncome,
