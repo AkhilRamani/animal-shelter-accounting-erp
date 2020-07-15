@@ -31,7 +31,7 @@ const variablesSchema = new mongoose.Schema({
     otp: Number,
     loggedIn: {
         type: Boolean,
-        default: true
+        default: false
     }
 })
 
